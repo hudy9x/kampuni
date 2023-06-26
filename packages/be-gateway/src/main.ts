@@ -9,7 +9,7 @@ import { ClerkExpressWithAuth, LooseAuthProp, WithAuthProp } from "@clerk/clerk-
 import { mdProjectAdd, mdMemberAdd, mdMemberGetProject, mdProjectGetAllByIds } from "@shared/models";
 import { MemberRole } from '@prisma/client';
 
-const app: Application = express();
+export const app: Application = express();
 
 declare global {
 	namespace Express {
@@ -17,7 +17,7 @@ declare global {
 	}
 }
 
-type RequestAuth = WithAuthProp<Request>
+export type RequestAuth = WithAuthProp<Request>
 
 app.use(cors())
 app.use(express.json())
