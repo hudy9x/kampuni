@@ -27,9 +27,8 @@ export default function SigninForm() {
       console.log(values);
       signin(values as ISignin)
         .then(res => {
-          push('/');
+          // push('/');
 
-          // messageSuccess('Success')
         })
         .catch(err => {
           console.log(err);
