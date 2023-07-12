@@ -20,6 +20,7 @@ export default function ProjectContainer() {
 
       addAllMember(data);
     });
-  }, []);
+  }, [])
+  
   return <ProjectNav />;
 }
